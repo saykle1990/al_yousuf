@@ -1,7 +1,5 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Алина Полищук
- * Date: 18.11.2016
- * Time: 14:43
- */
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
