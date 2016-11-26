@@ -1,0 +1,26 @@
+/*
+==================
+  Variables less
+==================
+*/
+.transition {
+  transition: .2s ease all;
+}
+.button-readMore {
+  padding: 8px 10px;
+  color: #fff;
+}
+.button-readMore-noColor {
+  background: transparent;
+  padding: 6px 20px;
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 3.6rem;
+  text-decoration: none;
+  transition: .2s ease all;
+}
+.button-readMore-noColor:hover {
+  background: rgba(255, 255, 255, 0.5);
+  color: inherit;
+  text-decoration: none;
+}

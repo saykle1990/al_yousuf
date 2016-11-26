@@ -18,7 +18,7 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="header">
+        <div class="header not-index">
             <svg class="rect" width="100%" height="600" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 -200 1500 600" preserveAspectRatio="xMidYMid meet">
                 <rect transform="rotate(-45 100 100)" height="1120" width="1120" fill="white" fill-opacity=".1" stroke="#eee" stroke-width="1" />
             </svg>
@@ -26,7 +26,8 @@
                 <div class="row">
                     <nav class="top-navigation-panel">
                         <div class="container">
-                            <ul class="top-navigation-list">
+                            <ul class="top-navigation-list-not-index">
+                                <li><a id="topNav-logo" href="#"><img src="img/logo-top.png" alt=""></a></li>
                                 <li><a href="#">The Group</a><span class="sep">/</span></li>
                                 <li><a href="#">Our Businesses</a><span class="sep">/</span></li>
                                 <li><a href="#">Careers</a><span class="sep">/</span></li>
@@ -42,38 +43,35 @@
                     </nav>
                 </div>
             </section>
-            <div class="parallax-top">
-                <div class="container">
-                    <div class="header-content col-sm-10">
+            <div class="parallax-top not-index">
+
+                    <div class="header-content col-sm-12">
                         <div class="container">
                             <div class="row">
-                                <div class="col-sm-5">
-                                    <img class="logo" id="logo-top-image" src="img/logo-top.png" alt="">
-                                </div>
-                            </div>
-                            <div class="row">
                                 <div class="col-sm-12">
-                                    <span id="number" class="col-sm-2">64</span>
-                                    <p class="logo-text col-sm-6">Years<span class="small-letter">of</span>Trust</p>
-                                    <p class="logo-text col-sm-6"><span class="small-letter">&</span>Care</p>
+                                    <span id="number" class="col-sm-4 text-right">64</span>
+                                    <p class="logo-text col-sm-7">Years<span class="small-letter">
+                                            of</span>Trust<span class="small-letter">&</span>Care
+                                        <a href="#" class="button-readMore-noColor">read more ...</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div id="top-parallax-block">
+
+                <div id="top-parallax-block not-index">
                     <img class="parallax-image layer" data-depth="0.1" src="img/top-parallax.jpg" alt="">
                 </div>
             </div>
             <svg class="angle-separator angle-top" id="header-symbol-line" xmlns="http://www.w3.org/2000/svg"
                  version="1.1" width="100%"
                  height="500" preserveAspectRatio="none" style="opacity: 1">
-                <line x1="103%" y1="0" x2="0" y2="495" />
+                <line x1="103%" y1="212" x2="0" y2="495" />
             </svg>
             <svg class="angle-separator angle-top" xmlns="http://www.w3.org/2000/svg" version="1.1" fill="#fff"
                  width="100%"
                  height="480" viewBox="0 0 4 0.266661" preserveAspectRatio="none" style="">
-                <polygon class="fil0" points="4,0 4,0.266661 -0,0.266661 "/>
+                <polygon class="fil0" points="7,0 4,0.266661 -0,0.266661 "/>
             </svg>
 
         </div>
