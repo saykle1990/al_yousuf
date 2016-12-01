@@ -1,6 +1,8 @@
 body {
   font-family: 'Raleway';
-  height: 2000px;
+  background: url(../img/body-bg.jpg) no-repeat 100% 100%;
+  -webkit-background-size: contain;
+  background-size: contain;
 }
 .header {
   height: 600px;
@@ -133,25 +135,32 @@ body {
   z-index: 6;
   overflow: hidden;
 }
-.top-navigation-panel .top-navigation-list {
+.top-navigation-panel .top-navigation-list,
+.top-navigation-panel .top-navigation-list-not-index {
   text-align: center;
   margin-bottom: 0;
 }
-.top-navigation-panel .top-navigation-list li {
+.top-navigation-panel .top-navigation-list li,
+.top-navigation-panel .top-navigation-list-not-index li {
   display: inline-block;
 }
-.top-navigation-panel .top-navigation-list li a {
+.top-navigation-panel .top-navigation-list li a,
+.top-navigation-panel .top-navigation-list-not-index li a {
   padding: 30px 8px;
   display: inherit;
   color: #fff;
+  text-transform: capitalize;
 }
-.top-navigation-panel .top-navigation-list li #topNav-logo {
+.top-navigation-panel .top-navigation-list li #topNav-logo,
+.top-navigation-panel .top-navigation-list-not-index li #topNav-logo {
   padding: 10px 8px;
 }
-.top-navigation-panel .top-navigation-list li #topNav-logo img {
+.top-navigation-panel .top-navigation-list li #topNav-logo img,
+.top-navigation-panel .top-navigation-list-not-index li #topNav-logo img {
   width: 210px;
 }
-.top-navigation-panel .top-navigation-list li .sep {
+.top-navigation-panel .top-navigation-list li .sep,
+.top-navigation-panel .top-navigation-list-not-index li .sep {
   display: inherit;
   font-size: 160%;
   position: relative;
@@ -160,20 +169,24 @@ body {
   font-family: 'Raleway Light';
   animation: separator 1s ease-in-out;
 }
-.top-navigation-panel .top-navigation-list li:nth-child(5) span {
+.top-navigation-panel .top-navigation-list li:nth-child(5) span,
+.top-navigation-panel .top-navigation-list-not-index li:nth-child(5) span {
   display: none;
 }
-.top-navigation-panel .top-navigation-list li.search {
+.top-navigation-panel .top-navigation-list li.search,
+.top-navigation-panel .top-navigation-list-not-index li.search {
   margin-left: 100px;
 }
-.top-navigation-panel .top-navigation-list li.search input {
+.top-navigation-panel .top-navigation-list li.search input,
+.top-navigation-panel .top-navigation-list-not-index li.search input {
   color: #fff;
   padding-left: 5px;
   width: 200px;
   background: transparent;
   border: 1px solid #fff;
 }
-.top-navigation-panel .top-navigation-list li.search .fa {
+.top-navigation-panel .top-navigation-list li.search .fa,
+.top-navigation-panel .top-navigation-list-not-index li.search .fa {
   transition: .2s ease;
 }
 .top-navigation-panel .top-navigation-list-not-index {

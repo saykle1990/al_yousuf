@@ -3,7 +3,8 @@
 body
 {
     font-family : @raleway;
-    height      : 2000px;
+    background : url(../img/body-bg.jpg)no-repeat 100% 100%;
+    -webkit-background-size :contain; background-size :contain;
 }
 
 .header
@@ -171,7 +172,8 @@ body
     z-index    : 6;
     overflow   : hidden;
 
-    .top-navigation-list
+    .top-navigation-list,
+    .top-navigation-list-not-index
     {
         text-align    : center;
         margin-bottom : 0;
@@ -183,6 +185,7 @@ body
                 padding : 30px 8px;
                 display : inherit;
                 color   : #fff;
+                text-transform : capitalize;
             }
             #topNav-logo
             {

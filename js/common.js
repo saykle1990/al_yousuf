@@ -38,6 +38,14 @@ $(document).ready(function(){
             $('.search').find('i.fa').removeClass('fa-lg');
         });
     });
+    $(function(){
+        $('#search-top-no-index').focusin(function () {
+            $('.search').find('i.fa').addClass('fa-lg');
+        });
+        $('#search-top-no-index').focusout(function () {
+            $('.search').find('i.fa').removeClass('fa-lg');
+        });
+    });
 
 
 

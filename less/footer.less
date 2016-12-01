@@ -1,5 +1,112 @@
 @import (reference) "var.less";
 
-h1{
-    font-family :@ralewayB;
+footer
+{
+    background : rgba(17, 25, 35, 0.53);
+    padding    : 40px 0;
+    display    : block;
+}
+
+.address-block
+{
+    color : #fff;
+    #address-title
+    {
+        text-transform : capitalize;
+        font-size      : 2rem;
+    }
+}
+
+.links-block
+{
+    ul
+    {
+        li
+        { list-style : none; padding : 5px 0;
+            a
+            { color : #fff; text-transform : capitalize; }
+        }
+    }
+}
+
+.social-block
+{
+    padding-left : 25px;
+    .footer-social-list
+    {
+        padding-top  : 30px;
+        padding-left : 0;
+        li
+        {
+            list-style : none;
+            display    : inline-block;
+            a
+            {
+                display      : inline-block;
+                width        : 40px;
+                height       : 40px;
+                margin-right : 0;
+                color        : #fff;
+                position     : relative;
+                text-align   : center;
+                overflow     : hidden;
+                &:before
+                {
+                    display       : block;
+                    position      : absolute;
+                    content       : '';
+                    top           : -20px;
+                    left          : 0;
+                    border        : 20px solid transparent;
+                    border-bottom : 20px solid #fff;
+                }
+                &:after
+                {
+                    display    : block;
+                    position   : absolute;
+                    content    : '';
+                    top        : 20px;
+                    left       : 0;
+                    border     : 20px solid transparent;
+                    border-top : 20px solid #fff;
+                }
+                i
+                {
+                    position    : relative;
+                    z-index     : 2;
+                    line-height : 40px;
+                    color       : rgba(17, 25, 35, 0.8);
+                }
+            }
+
+        }
+    }
+    input
+    {
+        background : transparent;
+        border     : 1px solid #fff;
+        padding    : 2px 5px;
+    }
+}
+
+.icon
+{
+    width          : 15px;
+    height         : 15px;
+    display        : inline-block;
+    vertical-align : middle;
+    line-height    : inherit;
+    margin-right   : 10px;
+    &-white
+    {
+        &:extend(.icon);
+        background              : url(../img/white-logo.png) no-repeat 50%;
+        -webkit-background-size : 15px; background-size : 15px;
+    }
+    &-blue
+    {
+        &:extend(.icon);
+        background              : url(../img/blue-logo.png) no-repeat 50%;
+        -webkit-background-size : 15px; background-size : 15px;
+    }
 }

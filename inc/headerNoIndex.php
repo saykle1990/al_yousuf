@@ -27,15 +27,15 @@
                     <nav class="top-navigation-panel">
                         <div class="container">
                             <ul class="top-navigation-list-not-index">
-                                <li><a id="topNav-logo" href="#"><img src="img/logo-top.png" alt=""></a></li>
-                                <li><a href="#">The Group</a><span class="sep">/</span></li>
-                                <li><a href="#">Our Businesses</a><span class="sep">/</span></li>
-                                <li><a href="#">Careers</a><span class="sep">/</span></li>
-                                <li><a href="#">Contact Us</a><span class="sep">/</span></li>
-                                <li><a href="#">News & Events</a><span class="sep">/</span></li>
+                                <li><a id="topNav-logo" href="?view=home"><img src="img/logo-top.png" alt=""></a></li>
+                                <?php if (isset($menu)):?>
+                                    <?php foreach ($menu as $item):?>
+                                        <li><a href="?view=content&?page=<?=$item['url']?>"><?=$item['name']?></a><span class="sep">/</span></li>
+                                    <?php endforeach;?>
+                                <?php endif;?>
                                 <li class="search animated bounceInUp">
-                                    <label for="search-top"></label>
-                                    <input type="text" id="search-top">
+                                    <label for="search-top-no-index"></label>
+                                    <input type="text" id="search-top-no-index">
                                     <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
                                 </li>
                             </ul>
